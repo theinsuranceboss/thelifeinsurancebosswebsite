@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Term Life Insurance | The Life Insurance Boss</title>
+  <meta name="description" content="Affordable term life insurance with fixed rates. Protect your family for a specific period with coverage from The Life Insurance Boss.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#FAC000', secondary: '#F59E0B' }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    
+    * { font-family: 'Inter', sans-serif; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    html, body { margin: 0; padding: 0; width: 100%; min-height: 100vh; background-color: #000; overflow-x: hidden; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0a0a0a; }
+    ::-webkit-scrollbar-thumb { background: #FAC000; border-radius: 4px; }
+    * { scrollbar-width: thin; scrollbar-color: #FAC000 #0a0a0a; }
+    .fade-in-up { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
+    .fade-in-up.visible { opacity: 1; transform: translateY(0); }
+    .dropdown-menu { opacity: 0; visibility: hidden; transition: opacity 0.2s ease, visibility 0.2s ease; }
+    .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; }
+    [contenteditable]:focus { outline: 2px dashed #FAC000; outline-offset: 2px; background: rgba(250,192,0,0.05); border-radius: 4px; }
+    /* Hero background */
+    .hero-bg { background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80'); background-size: cover; background-position: center; position: relative; }
+    .hero-bg::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, rgba(10,10,10,1), rgba(10,10,10,0.7), rgba(10,10,10,0.3)); }
+    .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,1), transparent, rgba(10,10,10,0.5)); }
+    
+    /* Custom styles from Google Drive contents */
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: transparent;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Section Styling */
+        .content-section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            color: #ffd700;
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-intro {
+            text-align: center;
+            font-size: 1.3em;
+            color: #ffffff;
+            margin-bottom: 60px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Insurance Products Grid */
+        .insurance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        /* Standard Card Style (Grey Background + Yellow Border) */
+        .insurance-card {
+            background: #363636; /* Dark Grey Background */
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid #ffd700; /* Yellow Border */
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            height: 100%;
+        }
+
+        .insurance-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            background: #404040;
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.15);
+        }
+
+        .insurance-card h3 {
+            color: #ffd700;
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .insurance-card p {
+            color: #ffffff;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .insurance-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0;
+        }
+
+        .insurance-card ul li {
+            color: #ffffff;
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.05em;
+        }
+
+        .insurance-card ul li::before {
+            content: '✓';
+            color: #ffd700;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.3em;
+        }
+
+        .insurance-card strong {
+            color: #ffd700;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: #363636; /* Dark Grey Background */
+            padding: 70px 40px;
+            border-radius: 25px;
+            margin: 80px 0;
+            border: 1px solid #ffd700; /* Yellow Border */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .stat-number {
+            color: #ffd700;
+            font-size: 3.5em;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .stat-label {
+            color: #ffffff;
+            font-size: 1.2em;
+            line-height: 1.4;
+        }
+
+        /* Comparison Table */
+        .comparison-wrapper {
+            overflow-x: auto;
+            margin: 40px 0;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #363636; /* Dark Grey */
+            border-radius: 15px;
+            border: 1px solid #ffd700; /* Yellow Border */
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .comparison-table thead {
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .comparison-table th {
+            color: #ffd700;
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.2em;
+            border-bottom: 2px solid #ffd700;
+        }
+
+        .comparison-table td {
+            padding: 18px 20px;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+            color: #ffffff;
+        }
+
+        .comparison-table tr:hover {
+            background: #404040;
+        }
+
+        /* FAQ Section - Clean Style */
+        .faq-section {
+            margin: 80px 0;
+        }
+
+        .faq-item {
+            background: #363636; /* Dark Grey Background */
+            margin-bottom: 20px;
+            border-radius: 15px;
+            border: none; /* NO BORDER */
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .faq-item:hover {
+            background: #404040;
+        }
+
+        .faq-question {
+            padding: 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .faq-question h3 {
+            color: #ffd700;
+            margin: 0;
+            font-size: 1.4em;
+            flex: 1;
+            font-weight: 700;
+        }
+
+        /* Simple Yellow Plus Toggle */
+        .faq-toggle {
+            width: auto;
+            height: auto;
+            background: transparent; /* No circle */
+            color: #ffd700; /* Yellow Text */
+            font-size: 2em;
+            font-weight: 400;
+            display: block;
+            margin-left: 20px;
+            line-height: 0.5;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 30px;
+            background: inherit;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+            padding: 0 30px 30px 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg); /* Rotates to X */
+        }
+
+        .faq-answer p {
+            color: #ffffff;
+            line-height: 1.9;
+            font-size: 1.1em;
+        }
+
+        /* Process Steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 40px 25px;
+            background: #363636; /* Dark Grey Background */
+            border-radius: 15px;
+            border: 1px solid #ffd700; /* Yellow Border */
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .process-step:hover {
+            transform: translateY(-10px);
+            background: #404040;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.15);
+        }
+
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #ffd700, #fadc2f);
+            color: #000000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: 700;
+            margin: 0 auto 25px;
+            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.5);
+        }
+
+        .process-step h4 {
+            color: #ffd700;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .process-step p {
+            color: #ffffff;
+            line-height: 1.7;
+            font-size: 1.05em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .insurance-grid { grid-template-columns: 1fr; }
+            .section-title { font-size: 2.2em; }
+        }
+
+        /* Animations */
+        .animate-on-scroll { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .animate-on-scroll.animated { opacity: 1; transform: translateY(0); }
+        .animate-fade { opacity: 0; transition: opacity 1s ease-out; }
+        .animate-fade.animated { opacity: 1; }
+        .animate-scale { opacity: 0; transform: scale(0.9); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .animate-scale.animated { opacity: 1; transform: scale(1); }
+
+        html { scroll-behavior: smooth; }
+    
+    
+  </style>
+</head>
+<body class="bg-gradient-to-br from-neutral-950 via-neutral-900 to-black min-h-screen">
+
+<div class="fixed inset-0 pointer-events-none overflow-hidden">
+  <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-yellow-500/10 to-transparent rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3"></div>
+  <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-amber-500/5 to-transparent rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3"></div>
+  <svg class="absolute inset-0 w-full h-full opacity-[0.02]" xmlns="http://www.w3.org/2000/svg">
+    <defs><pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="#FAC000" stroke-width="1"/></pattern></defs>
+    <rect width="100%" height="100%" fill="url(#grid)" />
+  </svg>
+</div>
+
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- LOGO -->
+        <a href="index.html" class="flex items-center flex-shrink-0 cursor-pointer">
+          <img src="logo.png" alt="The Life Insurance Boss Logo" class="h-10 sm:h-12 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='block';">
+          <span id="logo-fallback" class="text-yellow-400 font-bold text-lg tracking-tight hidden ml-2">The Life Insurance Boss</span>
+        </a>
+
+        <!-- DESKTOP MENU -->
+        <nav class="hidden xl:flex items-center space-x-6 mx-auto">
+          <a href="index.html#why-us" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">Why Us</a>
+          <a href="index.html#calculator" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">Calculator</a>
+          <a href="index.html#testimonials" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">Reviews</a>
+          <a href="index.html#faq" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">FAQ</a>
+          <a href="index.html#contact" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">Contact</a>
+          <div class="dropdown relative group">
+            <button class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors flex items-center space-x-1 cursor-pointer text-sm">
+              <span>Insurance Types</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="dropdown-menu absolute top-full left-0 mt-2 w-56 bg-neutral-900 border border-neutral-700 rounded-xl shadow-2xl shadow-black/50 overflow-hidden z-50">
+              <a href="whole-life.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Whole Life</a>
+              <a href="universal-life.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Universal Life</a>
+              <a href="term-life.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Term Life</a>
+              <a href="mortgage-protection.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Mortgage Protection</a>
+              <a href="disability-insurance.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Disability Insurance</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- CTA BUTTONS -->
+        <div class="flex items-center space-x-3 sm:space-x-4">
+          <a href="tel:732-268-3373" class="hidden lg:flex items-center space-x-2 text-neutral-300 hover:text-yellow-400 font-medium transition-colors whitespace-nowrap text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+            <span>732-268-3373</span>
+          </a>
+          <!-- GET YOUR QUOTE BUTTON -->
+          <a href="https://lifeinsuranceboss.com/get-a-life-insurance-quote/" class="bg-gradient-to-r from-yellow-400 to-amber-500 text-black px-4 sm:px-6 py-2 rounded-full font-semibold hover:from-yellow-300 hover:to-amber-400 transition-all shadow-lg shadow-yellow-500/25 hover:shadow-xl hover:shadow-yellow-500/30 hover:-translate-y-0.5 whitespace-nowrap text-sm">
+            Get Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<section class="hero-bg relative pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="fade-in-up text-center lg:text-left max-w-3xl">
+      <div class="inline-flex items-center space-x-2 bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+        <span class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
+        <span class="editable" data-key="term-badge">Term Life Insurance</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+        <span class="editable" data-key="term-headline">Affordable Protection</span>
+        <span class="block bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent editable" data-key="term-headline-2">For Your Most Important Years</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-neutral-400 mb-8 leading-relaxed max-w-2xl editable" data-key="term-description">Term life insurance offers the most affordable way to get substantial coverage for a specific period. Whether you're raising a family, paying off a mortgage, or building your business, term life ensures your loved ones are protected when they need it most.</p>
+      <a href="https://lifeinsuranceboss.com/get-a-life-insurance-quote/" class="inline-block bg-gradient-to-r from-yellow-400 to-amber-500 text-black px-8 py-4 rounded-full font-semibold text-lg hover:from-yellow-300 hover:to-amber-400 transition-all shadow-xl shadow-yellow-500/25">Get Your Free Quote</a>
+    </div>
+  </div>
+</section>
+
+
+    
+    <section class="content-section">
+        <div class="container">
+            <h2 class="editable section-title" data-key="term-life-h2-0">Affordable Coverage You Can Count On</h2>
+            <p class="editable section-intro" data-key="term-life-p-0">Term Life Insurance provides substantial death benefit protection for a specific period of time at a fixed, budget-friendly price. It's the simplest way to ensure your loved ones can pay the mortgage, cover living expenses, and maintain their lifestyle if the unexpected happens.</p>
+
+            <div class="stats-section">
+                <h3 class="editable" style="text-align: center; color: #ffd700; font-size: 2em; margin-bottom: 20px;" data-key="term-life-h3-0">Why Choose Term Life?</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">10-30</span>
+                        <span class="stat-label">Years of Fixed Rate Coverage</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">$16</span>
+                        <span class="stat-label">Average Monthly Cost for Healthy Adults</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Tax-Free Death Benefit for Beneficiaries</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">0%</span>
+                        <span class="stat-label">Investment Risk (Pure Protection)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="editable section-title" data-key="term-life-h2-1">Key Benefits of Term Life</h2>
+            <p class="editable section-intro" data-key="term-life-p-1">Term life is designed for families who need maximum protection at the lowest possible cost during their peak earning years.</p>
+
+            <div class="insurance-grid">
+                <div class="insurance-card">
+                    <h3 class="editable" data-key="term-life-h3-1">Budget Friendly</h3>
+                    <p class="editable" data-key="term-life-p-2">Term life is significantly less expensive than whole or universal life insurance. You get the most coverage for every dollar spent.</p>
+                    <ul>
+                        <li class="editable" data-key="term-life-li-0">Rates locked in for the full term</li>
+                        <li class="editable" data-key="term-life-li-1">High coverage limits for low premiums</li>
+                        <li class="editable" data-key="term-life-li-2">Ideal for young families on a budget</li>
+                    </ul>
+                </div>
+
+                <div class="insurance-card">
+                    <h3 class="editable" data-key="term-life-h3-2">Flexible Terms</h3>
+                    <p class="editable" data-key="term-life-p-3">Choose the duration that matches your financial obligations. Coverage lasts only as long as you need it—until the kids are grown or the house is paid off.</p>
+                    <ul>
+                        <li class="editable" data-key="term-life-li-3">10 Year Term: Short-term debts</li>
+                        <li class="editable" data-key="term-life-li-4">20 Year Term: Until kids graduate</li>
+                        <li class="editable" data-key="term-life-li-5">30 Year Term: Mortgage protection</li>
+                    </ul>
+                </div>
+
+                <div class="insurance-card">
+                    <h3 class="editable" data-key="term-life-h3-3">Income Replacement</h3>
+                    <p class="editable" data-key="term-life-p-4">If you pass away, your salary disappears. Term life provides a lump sum to replace that income, keeping your family's plans on track.</p>
+                    <ul>
+                        <li class="editable" data-key="term-life-li-6">Pay daily living expenses</li>
+                        <li class="editable" data-key="term-life-li-7">Fund college tuition</li>
+                        <li class="editable" data-key="term-life-li-8">Cover debts and final expenses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="editable section-title" data-key="term-life-h2-2">How to Choose Your Term Length</h2>
+            <p class="editable section-intro" data-key="term-life-p-5">Match your term length to your biggest financial responsibilities.</p>
+
+            <div class="comparison-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Term Length</th>
+                            <th>Best Used For</th>
+                            <th>Ideal Candidate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>10 Years</strong></td>
+                            <td>Short-term debts, loans, or final years before retirement.</td>
+                            <td>Older adults or those with short-term obligations.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>15-20 Years</strong></td>
+                            <td>Raising children to adulthood or covering a medium-term mortgage.</td>
+                            <td>Parents with young children or teens.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>30 Years</strong></td>
+                            <td>Long-term mortgage protection and income replacement for young families.</td>
+                            <td>Newlyweds, new parents, or new homeowners.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section process-section">
+        <div class="container">
+            <h2 class="editable section-title" data-key="term-life-h2-3">Simple Steps to Get Covered</h2>
+            <p class="editable section-intro" data-key="term-life-p-6">Getting protected is easier than you think. Many policies require no medical exam.</p>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4 class="editable" data-key="term-life-h4-0">Calculate Needs</h4>
+                    <p class="editable" data-key="term-life-p-7">Determine how much coverage your family needs (typically 10-12x income).</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4 class="editable" data-key="term-life-h4-1">Compare Quotes</h4>
+                    <p class="editable" data-key="term-life-p-8">We shop dozens of top-rated carriers to find the best rate for your age and health.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4 class="editable" data-key="term-life-h4-2">Apply Online</h4>
+                    <p class="editable" data-key="term-life-p-9">Complete a simple application. Some options offer instant approval without an exam.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4 class="editable" data-key="term-life-h4-3">Peace of Mind</h4>
+                    <p class="editable" data-key="term-life-p-10">Once approved, your premium is locked in, and your family is protected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section faq-section">
+        <div class="container">
+            <h2 class="editable section-title" data-key="term-life-h2-4">Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 class="editable" data-key="term-life-h3-4">Do I get my money back at the end of the term?</h3>
+                    <div class="faq-toggle">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p class="editable" data-key="term-life-p-11">With a standard term policy, no. It works like auto insurance—you pay for protection during the term. However, "Return of Premium" (ROP) term policies are available that refund your premiums if you outlive the term, though they cost more.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 class="editable" data-key="term-life-h3-5">Do I need a medical exam?</h3>
+                    <div class="faq-toggle">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p class="editable" data-key="term-life-p-12">Not always. We offer "Simplified Issue" and "Instant Decision" policies that use health questions and databases instead of a physical exam. These are faster but may be slightly more expensive than fully underwritten policies.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 class="editable" data-key="term-life-h3-6">Can I convert to permanent insurance later?</h3>
+                    <div class="faq-toggle">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p class="editable" data-key="term-life-p-13">Yes, most term policies include a "conversion rider" that allows you to convert all or part of your coverage to a permanent policy (like Whole Life) without a new medical exam, usually within a specific timeframe.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 class="editable" data-key="term-life-h3-7">What happens if I stop paying premiums?</h3>
+                    <div class="faq-toggle">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p class="editable" data-key="term-life-p-14">Since term insurance has no cash value, if you stop paying premiums, the coverage simply ends after a grace period (usually 30-31 days). You won't owe back premiums, but you will lose the protection.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 class="editable" data-key="term-life-h3-8">Does the price go up as I get older?</h3>
+                    <div class="faq-toggle">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p class="editable" data-key="term-life-p-15">No. With "Level Term Life Insurance," your premium is guaranteed to stay the same for the entire length of the term you choose (e.g., 20 years), regardless of changes in your health or age.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<footer class="py-12 bg-neutral-950 border-t border-neutral-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-center md:text-left">
+        <div class="text-2xl font-bold text-white mb-2">The Life Insurance Boss</div>
+        <div class="flex items-center justify-center md:justify-start gap-4">
+          <p class="text-neutral-500">Protecting families in NY, NJ & PA</p>
+          <div class="flex items-center gap-3">
+            <a href="#" class="text-white hover:text-yellow-400 transition-colors" data-admin-key="social-fb" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" /></svg>
+            </a>
+            <a href="#" class="text-white hover:text-yellow-400 transition-colors" data-admin-key="social-ig" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.462 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 text-neutral-400">
+        <a href="index.html" class="hover:text-yellow-400 transition-colors">Home</a>
+        <a href="index.html#faq" class="hover:text-yellow-400 transition-colors">FAQ</a>
+        <a href="index.html#contact" class="hover:text-yellow-400 transition-colors">Contact</a>
+      </div>
+    </div>
+    
+    <div class="mt-8 pt-8 border-t border-neutral-800 text-center text-neutral-500 text-sm">
+      <p>&copy; 2026 The Life Insurance Boss. All rights reserved. Licensed in New York, New Jersey & Pennsylvania.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  const pageObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        entry.target.classList.add('animate');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.fade-in-up,.insurance-card,.stat-item,.process-step,.faq-item').forEach(el => pageObserver.observe(el));
+  
+  // FAQ Toggle
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    });
+  });
+</script>
+
+<script src="js/quote.js"></script>
+<script src="js/chatbot.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
+

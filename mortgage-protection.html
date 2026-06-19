@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortgage Protection Insurance | The Life Insurance Boss</title>
+  <meta name="description" content="Mortgage protection insurance ensures your home is paid off if something happens to you. Protect your family's home with coverage from The Life Insurance Boss.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#FAC000', secondary: '#F59E0B' }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    
+    * { font-family: 'Inter', sans-serif; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    html, body { margin: 0; padding: 0; width: 100%; min-height: 100vh; background-color: #000; overflow-x: hidden; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0a0a0a; }
+    ::-webkit-scrollbar-thumb { background: #FAC000; border-radius: 4px; }
+    * { scrollbar-width: thin; scrollbar-color: #FAC000 #0a0a0a; }
+    .fade-in-up { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
+    .fade-in-up.visible { opacity: 1; transform: translateY(0); }
+    .dropdown-menu { opacity: 0; visibility: hidden; transition: opacity 0.2s ease, visibility 0.2s ease; }
+    .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; }
+    [contenteditable]:focus { outline: 2px dashed #FAC000; outline-offset: 2px; background: rgba(250,192,0,0.05); border-radius: 4px; }
+    /* Hero background */
+    .hero-bg { background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80'); background-size: cover; background-position: center; position: relative; }
+    .hero-bg::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, rgba(10,10,10,1), rgba(10,10,10,0.7), rgba(10,10,10,0.3)); }
+    .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,1), transparent, rgba(10,10,10,0.5)); }
+    
+    /* Custom styles from Google Drive contents */
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            background: transparent;
+            color: #ffffff;
+        }
+
+        /* How It Works Section */
+        .how-it-works-section {
+            padding: 60px 20px;
+            background: transparent;
+        }
+
+        .how-it-works-intro {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(60, 60, 60, 0.85);
+            padding: 50px 60px;
+            border-radius: 12px;
+            border-left: 5px solid #ffd700;
+        }
+
+        .intro-content p {
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .intro-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            color: #ffd700;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        /* Value Proposition Section */
+        .value-prop-section {
+            padding: 60px 20px;
+            background: transparent;
+        }
+
+        .value-prop-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .value-card {
+            background: rgba(60, 60, 60, 0.85);
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            border-top: 5px solid #ffd700;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .value-card.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+        }
+
+        .value-card .icon {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .value-card h3 {
+            color: #ffd700;
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .value-card p {
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        /* Social Proof Section */
+        .social-proof-section {
+            padding: 60px 20px;
+            background: rgba(60, 60, 60, 0.85);
+        }
+
+        .social-proof-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .social-proof-container h2 {
+            color: #ffd700;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .stat-box {
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .stat-box.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stat-box .number {
+            color: #ffd700;
+            font-size: 52px;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-box .number-text {
+            color: #ffd700;
+            font-size: 52px;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-box .label {
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .testimonial {
+            background: rgba(50, 50, 50, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid #ffd700;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .testimonial.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .testimonial .quote {
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial .author {
+            color: #ffd700;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .testimonial .location {
+            color: #cccccc;
+            font-size: 14px;
+        }
+
+        /* Problem/Solution Section */
+        .problem-solution-section {
+            padding: 60px 20px;
+            background: transparent;
+        }
+
+        .problem-solution-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .problem-box,
+        .solution-box {
+            padding: 40px;
+            border-radius: 12px;
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .solution-box {
+            transform: translateX(30px);
+        }
+
+        .problem-box.animate,
+        .solution-box.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .problem-box {
+            background: rgba(80, 40, 40, 0.85);
+            border-left: 5px solid #ff4444;
+        }
+
+        .solution-box {
+            background: rgba(40, 80, 40, 0.85);
+            border-left: 5px solid #44ff44;
+        }
+
+        .problem-box h2,
+        .solution-box h2 {
+            color: #ffd700;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .problem-box ul,
+        .solution-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .problem-box ul li,
+        .solution-box ul li {
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            padding-left: 35px;
+            position: relative;
+        }
+
+        .problem-box ul li::before {
+            content: "✗";
+            color: #ff4444;
+            font-weight: bold;
+            font-size: 24px;
+            position: absolute;
+            left: 0;
+        }
+
+        .solution-box ul li::before {
+            content: "✓";
+            color: #44ff44;
+            font-weight: bold;
+            font-size: 24px;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Coverage Section */
+        .coverage-section {
+            padding: 60px 20px;
+            background: transparent;
+        }
+
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .coverage-card {
+            background: rgba(60, 60, 60, 0.85);
+            padding: 40px;
+            border-radius: 12px;
+            border: 2px solid transparent;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.3s ease;
+        }
+
+        .coverage-card.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .coverage-card:hover {
+            border-color: #ffd700;
+            transform: translateY(-5px);
+        }
+
+        .coverage-card h3 {
+            color: #ffd700;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .coverage-card p {
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .coverage-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .coverage-card ul li {
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .coverage-card ul li::before {
+            content: "✓";
+            color: #ffd700;
+            font-weight: bold;
+            font-size: 22px;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            padding: 60px 20px;
+            background: rgba(60, 60, 60, 0.85);
+        }
+
+        .benefits-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .benefits-container h2 {
+            color: #ffd700;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .benefit-item {
+            background: rgba(50, 50, 50, 0.9);
+            padding: 30px;
+            border-radius: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .benefit-item.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .benefit-item .check {
+            color: #ffd700;
+            font-size: 32px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .benefit-item .content h3 {
+            color: #ffd700;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .benefit-item .content p {
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Scenarios Section */
+        .scenarios-section {
+            padding: 60px 20px;
+            background: transparent;
+        }
+
+        .scenarios-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .scenarios-container h2 {
+            color: #ffd700;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .scenarios-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .scenario-item {
+            background: rgba(60, 60, 60, 0.85);
+            padding: 35px 30px;
+            border-radius: 12px;
+            border-left: 4px solid #ffd700;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .scenario-item.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .scenario-item h3 {
+            color: #ffd700;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .scenario-item p {
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .scenario-item .outcome {
+            color: #44ff44;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 60px 20px;
+            background: transparent;
+        }
+
+        .faq-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(60, 60, 60, 0.85);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid transparent;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.3s ease;
+        }
+
+        .faq-item.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .faq-item:hover {
+            border-color: #ffd700;
+        }
+
+        .faq-header {
+            background: rgba(50, 50, 50, 0.9);
+            padding: 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .faq-header h3 {
+            color: #ffd700;
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .faq-header .icon {
+            color: #ffd700;
+            font-size: 24px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-header .icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-content {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+
+        .faq-item.active .faq-content {
+            padding: 25px 30px;
+            max-height: 1000px;
+        }
+
+        .faq-content p {
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .faq-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 20px;
+            background: transparent;
+        }
+
+        .cta-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.98) 0%, rgba(255, 193, 7, 0.98) 100%);
+            padding: 60px 50px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 50px rgba(255, 215, 0, 0.3);
+        }
+
+        .cta-container h2 {
+            color: #1a1a1a;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cta-container .urgency-text {
+            color: #cc0000;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cta-container p {
+            color: #1a1a1a;
+            font-size: 22px;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #ffd700;
+            padding: 18px 50px;
+            font-size: 22px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            background: #2a2a2a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .value-prop-grid,
+            .coverage-grid,
+            .benefits-grid,
+            .scenarios-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .problem-solution-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-header h2,
+            .social-proof-container h2,
+            .benefits-container h2,
+            .scenarios-container h2,
+            .cta-container h2 {
+                font-size: 32px;
+            }
+
+            .stats-row,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .value-card,
+            .coverage-card,
+            .cta-container {
+                padding: 30px 20px;
+            }
+
+            .how-it-works-intro {
+                padding: 30px 25px;
+            }
+
+            .intro-content p {
+                font-size: 18px;
+            }
+
+            .cta-container h2 {
+                font-size: 32px;
+            }
+        }
+    
+    
+  </style>
+</head>
+<body class="bg-gradient-to-br from-neutral-950 via-neutral-900 to-black min-h-screen">
+
+<div class="fixed inset-0 pointer-events-none overflow-hidden">
+  <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-yellow-500/10 to-transparent rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3"></div>
+  <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-amber-500/5 to-transparent rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3"></div>
+  <svg class="absolute inset-0 w-full h-full opacity-[0.02]" xmlns="http://www.w3.org/2000/svg">
+    <defs><pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="#FAC000" stroke-width="1"/></pattern></defs>
+    <rect width="100%" height="100%" fill="url(#grid)" />
+  </svg>
+</div>
+
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- LOGO -->
+        <a href="index.html" class="flex items-center flex-shrink-0 cursor-pointer">
+          <img src="logo.png" alt="The Life Insurance Boss Logo" class="h-10 sm:h-12 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='block';">
+          <span id="logo-fallback" class="text-yellow-400 font-bold text-lg tracking-tight hidden ml-2">The Life Insurance Boss</span>
+        </a>
+
+        <!-- DESKTOP MENU -->
+        <nav class="hidden xl:flex items-center space-x-6 mx-auto">
+          <a href="index.html#why-us" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">Why Us</a>
+          <a href="index.html#calculator" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">Calculator</a>
+          <a href="index.html#testimonials" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">Reviews</a>
+          <a href="index.html#faq" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">FAQ</a>
+          <a href="index.html#contact" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">Contact</a>
+          <div class="dropdown relative group">
+            <button class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors flex items-center space-x-1 cursor-pointer text-sm">
+              <span>Insurance Types</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="dropdown-menu absolute top-full left-0 mt-2 w-56 bg-neutral-900 border border-neutral-700 rounded-xl shadow-2xl shadow-black/50 overflow-hidden z-50">
+              <a href="whole-life.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Whole Life</a>
+              <a href="universal-life.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Universal Life</a>
+              <a href="term-life.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Term Life</a>
+              <a href="mortgage-protection.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Mortgage Protection</a>
+              <a href="disability-insurance.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Disability Insurance</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- CTA BUTTONS -->
+        <div class="flex items-center space-x-3 sm:space-x-4">
+          <a href="tel:732-268-3373" class="hidden lg:flex items-center space-x-2 text-neutral-300 hover:text-yellow-400 font-medium transition-colors whitespace-nowrap text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+            <span>732-268-3373</span>
+          </a>
+          <!-- GET YOUR QUOTE BUTTON -->
+          <a href="https://lifeinsuranceboss.com/get-a-life-insurance-quote/" class="bg-gradient-to-r from-yellow-400 to-amber-500 text-black px-4 sm:px-6 py-2 rounded-full font-semibold hover:from-yellow-300 hover:to-amber-400 transition-all shadow-lg shadow-yellow-500/25 hover:shadow-xl hover:shadow-yellow-500/30 hover:-translate-y-0.5 whitespace-nowrap text-sm">
+            Get Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<section class="hero-bg relative pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="fade-in-up text-center lg:text-left max-w-3xl">
+      <div class="inline-flex items-center space-x-2 bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+        <span class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
+        <span class="editable" data-key="mortgage-badge">Mortgage Protection Insurance</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+        <span class="editable" data-key="mortgage-headline">Keep Your Family's</span>
+        <span class="block bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent editable" data-key="mortgage-headline-2">Home Safe & Secure</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-neutral-400 mb-8 leading-relaxed max-w-2xl editable" data-key="mortgage-description">Mortgage protection insurance ensures that your home is paid off in full if something happens to you. Your family keeps the house without the burden of monthly payments. It's one of the smartest ways to protect your family's largest asset.</p>
+      <a href="https://lifeinsuranceboss.com/get-a-life-insurance-quote/" class="inline-block bg-gradient-to-r from-yellow-400 to-amber-500 text-black px-8 py-4 rounded-full font-semibold text-lg hover:from-yellow-300 hover:to-amber-400 transition-all shadow-xl shadow-yellow-500/25">Get Your Free Quote</a>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- How Mortgage Protection Insurance Works Section -->
+    <section class="how-it-works-section">
+        <div class="section-header">
+            <h2 class="editable" data-key="mortgage-protection-h2-0">How Mortgage Protection Insurance Works</h2>
+            <p class="editable" data-key="mortgage-protection-p-0">Protect the home your family loves, even if you’re no longer here.y</p>
+        </div>
+
+        <div class="how-it-works-intro">
+            <div class="intro-content">
+                <p class="editable" data-key="mortgage-protection-p-1">Mortgage protection insurance is a type of life insurance designed to help pay off your mortgage if you pass away during the policy term. This can help your family remain in the home without the burden of monthly mortgage payments during an already difficult time.</p>
+                
+                <p class="editable" data-key="mortgage-protection-p-2">When a covered death occurs, the policy’s death benefit can be used to pay down or pay off the remaining mortgage balance, giving your family financial support and a greater ability to stay in the home.</p>
+                
+                <p class="editable" data-key="mortgage-protection-p-3">Mortgage protection insurance functions similarly to term life insurance but is structured to match your mortgage amount and loan duration.
+
+For example:
+
+If you have a $300,000 mortgage with 25 years remaining, you would typically choose a policy with similar coverage and term length.
+
+Some policies offer a decreasing death benefit, designed to follow your declining mortgage balance. This structure is often more affordable than a level-term policy.
+
+Premiums generally remain level throughout the policy, even as you age or your health changes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Cards -->
+    <section class="value-prop-section">
+        <div class="value-prop-grid">
+            <div class="value-card">
+                <h3 class="editable" data-key="mortgage-protection-h3-0">Keep Your Family Home</h3>
+                <p class="editable" data-key="mortgage-protection-p-4">If you pass away during the policy term, the death benefit can be used to help pay off the remaining mortgage balance. This gives your family the ability to stay in their home without the added stress of monthly payments during an already difficult time.</p>
+            </div>
+            <div class="value-card">
+                <h3 class="editable" data-key="mortgage-protection-h3-1">Disability & Job Loss Protection</h3>
+                <p class="editable" data-key="mortgage-protection-p-5">Optional riders can help cover mortgage payments if you become disabled or experience qualifying unemployment. These added benefits provide extra financial support during life’s unexpected challenges.</p>
+            </div>
+            <div class="value-card">
+                <h3 class="editable" data-key="mortgage-protection-h3-2">Affordable Coverage</h3>
+                <p class="editable" data-key="mortgage-protection-p-6">Because some mortgage protection policies decrease in coverage as your mortgage balance declines, premiums are often lower than standard level-term life insurance making long-term protection more budget-friendly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof-section">
+        <div class="social-proof-container">
+            <h2 class="editable" data-key="mortgage-protection-h2-1">Protect Your Most Important Asset</h2>
+            
+            <div class="stats-row">
+                <div class="stat-box">
+                    <span class="number editable" data-target="63" data-suffix="%" data-key="mortgage-protection-num-0">0</span>
+                    <span class="label">Of Americans are homeowners</span>
+                </div>
+                <div class="stat-box">
+                    <span class="number editable" data-target="300" data-prefix="$" data-suffix="K" data-key="mortgage-protection-num-1">0</span>
+                    <span class="label">Average U.S. mortgage balance</span>
+                </div>
+                <div class="stat-box">
+                    <span class="number editable" data-target="37" data-suffix="%" data-key="mortgage-protection-num-2">0</span>
+                    <span class="label">Of families forced to sell home after breadwinner's death</span>
+                </div>
+                <div class="stat-box">
+                    <span class="number editable" data-target="100" data-suffix="%" data-key="mortgage-protection-num-3">0</span>
+                    <span class="label">Mortgage paid off with coverage</span>
+                </div>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p class="editable quote" data-key="mortgage-protection-p-7">"When my husband died suddenly, his mortgage protection policy paid off our $280,000 mortgage completely. We own the house free and clear. I don't know how we would've survived without it."</p>
+                    <p class="editable author" data-key="mortgage-protection-p-8">Rachel T.</p>
+                    <p class="editable location" data-key="mortgage-protection-p-9">Nurse, Houston, TX</p>
+                </div>
+                <div class="testimonial">
+                    <p class="editable quote" data-key="mortgage-protection-p-10">"I was diagnosed with cancer and couldn't work for 8 months. The disability rider on my mortgage protection policy made every payment while I recovered. Saved our home and our family."</p>
+                    <p class="editable author" data-key="mortgage-protection-p-11">David M.</p>
+                    <p class="editable location" data-key="mortgage-protection-p-12">Contractor, Nashville, TN</p>
+                </div>
+                <div class="testimonial">
+                    <p class="editable quote" data-key="mortgage-protection-p-13">"After I was laid off, the unemployment rider made our mortgage payments for 6 months while I found new work. We didn't touch savings and never missed a payment. Best decision we ever made."</p>
+                    <p class="editable author" data-key="mortgage-protection-p-14">Jennifer K.</p>
+                    <p class="editable location" data-key="mortgage-protection-p-15">IT Professional, Phoenix, AZ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="problem-solution-section">
+        <div class="problem-solution-container">
+            <div class="problem-box">
+                <h2 class="editable" data-key="mortgage-protection-h2-2">Without Mortgage Protection</h2>
+                <ul>
+                    <li class="editable" data-key="mortgage-protection-li-0">Family forced to sell home after breadwinner's death</li>
+                    <li class="editable" data-key="mortgage-protection-li-1">Surviving spouse struggles with mortgage payments alone</li>
+                    <li class="editable" data-key="mortgage-protection-li-2">Kids uprooted from schools and neighborhood</li>
+                    <li class="editable" data-key="mortgage-protection-li-3">Home foreclosed due to missed payments</li>
+                    <li class="editable" data-key="mortgage-protection-li-4">Life insurance used for other debts, not mortgage</li>
+                    <li class="editable" data-key="mortgage-protection-li-5">Family stability destroyed during grief</li>
+                </ul>
+            </div>
+
+            <div class="solution-box">
+                <h2 class="editable" data-key="mortgage-protection-h2-3">With Mortgage Protection</h2>
+                <ul>
+                    <li class="editable" data-key="mortgage-protection-li-6">Mortgage paid off completely family keeps home</li>
+                    <li class="editable" data-key="mortgage-protection-li-7">No monthly payments for surviving family members</li>
+                    <li class="editable" data-key="mortgage-protection-li-8">Kids stay in same home, school, and community</li>
+                    <li class="editable" data-key="mortgage-protection-li-9">Home owned free and clear immediately</li>
+                    <li class="editable" data-key="mortgage-protection-li-10">Dedicated coverage specifically for mortgage</li>
+                    <li class="editable" data-key="mortgage-protection-li-11">Financial stability and security maintained</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Section -->
+    <section class="coverage-section">
+        <div class="section-header">
+            <h2 class="editable" data-key="mortgage-protection-h2-4">What Does Mortgage Protection Cover?</h2>
+            <p class="editable" data-key="mortgage-protection-p-16">Coverage that helps keep your loved ones in the home you’ve built together.</p>
+        </div>
+
+        <div class="coverage-grid">
+            <div class="coverage-card">
+                <h3 class="editable" data-key="mortgage-protection-h3-3">Death Benefit Coverage</h3>
+                <p class="editable" data-key="mortgage-protection-p-17">Core protection that pays off your mortgage if you die during the policy term. Ensures your family receives the home debt-free.</p>
+                <ul>
+                    <li class="editable" data-key="mortgage-protection-li-12">Full mortgage payoff upon death</li>
+                    <li class="editable" data-key="mortgage-protection-li-13">Tax-free death benefit to family</li>
+                    <li class="editable" data-key="mortgage-protection-li-14">Coverage matches mortgage amount</li>
+                    <li class="editable" data-key="mortgage-protection-li-15">Fast claim processing (days not months)</li>
+                    <li class="editable" data-key="mortgage-protection-li-16">No waiting period after approval</li>
+                    <li class="editable" data-key="mortgage-protection-li-17">Family keeps home with no payments</li>
+                </ul>
+            </div>
+
+            <div class="coverage-card">
+                <h3 class="editable" data-key="mortgage-protection-h3-4">Disability Income Rider</h3>
+                <p class="editable" data-key="mortgage-protection-p-18">Optional coverage that makes your mortgage payments if you become disabled and unable to work. Protects against income loss from injury or illness.</p>
+                <ul>
+                    <li class="editable" data-key="mortgage-protection-li-18">Pays monthly mortgage payment directly</li>
+                    <li class="editable" data-key="mortgage-protection-li-19">Covers total and partial disability</li>
+                    <li class="editable" data-key="mortgage-protection-li-20">Benefit period typically 12-24 months</li>
+                    <li class="editable" data-key="mortgage-protection-li-21">Waiting period 30-90 days usually</li>
+                    <li class="editable" data-key="mortgage-protection-li-22">Covers mortgage principal and interest</li>
+                    <li class="editable" data-key="mortgage-protection-li-23">No need to dip into savings or retirement</li>
+                </ul>
+            </div>
+
+            <div class="coverage-card">
+                <h3 class="editable" data-key="mortgage-protection-h3-5">Unemployment Protection Rider</h3>
+                <p class="editable" data-key="mortgage-protection-p-19">Makes mortgage payments if you lose your job through layoffs or company closure. Provides breathing room to find new employment.</p>
+                <ul>
+                    <li class="editable" data-key="mortgage-protection-li-24">Covers involuntary job loss only</li>
+                    <li class="editable" data-key="mortgage-protection-li-25">Pays 6-12 months of mortgage payments</li>
+                    <li class="editable" data-key="mortgage-protection-li-26">Waiting period typically 30-60 days</li>
+                    <li class="editable" data-key="mortgage-protection-li-27">Qualification requires prior employment</li>
+                    <li class="editable" data-key="mortgage-protection-li-28">Prevents foreclosure during job search</li>
+                    <li class="editable" data-key="mortgage-protection-li-29">Preserve credit and home equity</li>
+                </ul>
+            </div>
+
+            <div class="coverage-card">
+                <h3 class="editable" data-key="mortgage-protection-h3-6">Critical Illness Rider</h3>
+                <p class="editable" data-key="mortgage-protection-p-20">Accelerates payment or pays lump sum if you're diagnosed with specified critical illnesses like cancer, heart attack, or stroke.</p>
+                <ul>
+                    <li class="editable" data-key="mortgage-protection-li-30">Covers major illnesses (cancer, heart, stroke)</li>
+                    <li class="editable" data-key="mortgage-protection-li-31">Lump sum or accelerated payments</li>
+                    <li class="editable" data-key="mortgage-protection-li-32">Use funds for medical bills or mortgage</li>
+                    <li class="editable" data-key="mortgage-protection-li-33">Benefit typically 6-12 months payments</li>
+                    <li class="editable" data-key="mortgage-protection-li-34">No restrictions on fund usage</li>
+                    <li class="editable" data-key="mortgage-protection-li-35">Complements health insurance coverage</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="benefits-container">
+            <h2 class="editable" data-key="mortgage-protection-h2-5">Why You Need Mortgage Protection</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="check">✓</div>
+                    <div class="content">
+                        <h3 class="editable" data-key="mortgage-protection-h3-7">Targeted Home Protection</h3>
+                        <p class="editable" data-key="mortgage-protection-p-21">Unlike general life insurance that can be used for any purpose, mortgage protection is structured to help pay off your home loan. This helps ensure funds are available for one of your family’s most important financial needs.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="check">✓</div>
+                    <div class="content">
+                        <h3 class="editable" data-key="mortgage-protection-h3-8">Family Stays in Their Home</h3>
+                        <p class="editable" data-key="mortgage-protection-p-22">Studies show many families struggle to maintain mortgage payments after the loss of a primary earner. Mortgage protection provides a dedicated benefit your family can use to help keep the home and maintain stability during a difficult time.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="check">✓</div>
+                    <div class="content">
+                        <h3 class="editable" data-key="mortgage-protection-h3-9">Lower Cost Than Term Life</h3>
+                        <p class="editable" data-key="mortgage-protection-p-23">Because some mortgage protection policies decrease in coverage as your mortgage balance declines, premiums are often 20–40% lower than comparable level-term life insurance with the same starting coverage amount.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="check">✓</div>
+                    <div class="content">
+                        <h3 class="editable" data-key="mortgage-protection-h3-10">Disability & Job Loss Protection</h3>
+                        <p class="editable" data-key="mortgage-protection-p-24">Optional riders can provide added support by helping cover mortgage payments if you become disabled, critically ill, or experience qualifying unemployment. This expands protection beyond just death benefits.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="check">✓</div>
+                    <div class="content">
+                        <h3 class="editable" data-key="mortgage-protection-h3-11">Simple Approval Process</h3>
+                        <p class="editable" data-key="mortgage-protection-p-25">Many mortgage protection policies offer simplified underwriting, and some applicants may qualify without a medical exam. This makes approval faster and easier than many traditional life insurance policies.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="check">✓</div>
+                    <div class="content">
+                        <h3 class="editable" data-key="mortgage-protection-h3-12">Peace of Mind</h3>
+                        <p class="editable" data-key="mortgage-protection-p-26">Knowing your family has financial support to help maintain the home provides reassurance and stability. It removes one of the biggest worries for homeowners with dependents.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="check">✓</div>
+                    <div class="content">
+                        <h3 class="editable" data-key="mortgage-protection-h3-13">Protects Home Equity</h3>
+                        <p class="editable" data-key="mortgage-protection-p-27">By helping your family keep up with mortgage obligations, mortgage protection can reduce the risk of forced sales or distressed pricing preserving the equity you’ve built over time.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="check">✓</div>
+                    <div class="content">
+                        <h3 class="editable" data-key="mortgage-protection-h3-14">No Lender Involvement</h3>
+                        <p class="editable" data-key="mortgage-protection-p-28">Unlike PMI, which protects the lender, mortgage protection provides a benefit your family controls. They decide how to use the funds and can apply them toward paying off or managing the mortgage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scenarios Section -->
+    <section class="scenarios-section">
+        <div class="scenarios-container">
+            <h2 class="editable" data-key="mortgage-protection-h2-6">Real-Life Protection Scenarios</h2>
+            <div class="scenarios-grid">
+                <div class="scenario-item">
+                    <h3 class="editable" data-key="mortgage-protection-h3-15">Unexpected Death</h3>
+                    <p class="editable" data-key="mortgage-protection-p-29">Sarah's husband died in a car accident at age 42. They owed $285,000 on their home with 23 years remaining. Sarah was a part-time teacher earning $35,000 annually not enough to cover the $2,100 mortgage payment.</p>
+                    <p class="editable outcome" data-key="mortgage-protection-p-30">OUTCOME: Mortgage protection paid off the full $285,000 balance. Sarah and her three kids kept their home with no monthly payments.</p>
+                </div>
+
+                <div class="scenario-item">
+                    <h3 class="editable" data-key="mortgage-protection-h3-16">Disability from Accident</h3>
+                    <p class="editable" data-key="mortgage-protection-p-31">Mike fell from a ladder and broke his back, leaving him unable to work for 18 months. His construction income of $75,000 stopped immediately. His $1,850 mortgage payment was due but savings wouldn't last.</p>
+                    <p class="editable outcome" data-key="mortgage-protection-p-32">OUTCOME: Disability rider made all 18 monthly payments totaling $33,300. Mike recovered fully without losing his home or depleting savings.</p>
+                </div>
+
+                <div class="scenario-item">
+                    <h3 class="editable" data-key="mortgage-protection-h3-17">Company Layoffs</h3>
+                    <p class="editable" data-key="mortgage-protection-p-33">Jennifer lost her $95,000 job when her tech company downsized. Her $2,400 mortgage payment continued but unemployment benefits only covered $450/week. She needed 5 months to find comparable work.</p>
+                    <p class="editable outcome" data-key="mortgage-protection-p-34">OUTCOME: Unemployment rider made 5 months of payments ($12,000). Jennifer found new employment without missing a mortgage payment or damaging credit.</p>
+                </div>
+
+                <div class="scenario-item">
+                    <h3 class="editable" data-key="mortgage-protection-h3-18">Cancer Diagnosis</h3>
+                    <p class="editable" data-key="mortgage-protection-p-35">Robert was diagnosed with stage 3 colon cancer at 48. Treatment required 8 months away from his $110,000 sales job. Medical bills mounted quickly while income disappeared but the $2,600 mortgage remained due.</p>
+                    <p class="editable outcome" data-key="mortgage-protection-p-36">OUTCOME: Critical illness rider paid 8 months of mortgage payments ($20,800). Robert focused on recovery without financial stress about losing the home.</p>
+                </div>
+
+                <div class="scenario-item">
+                    <h3 class="editable" data-key="mortgage-protection-h3-19">Small Business Failure</h3>
+                    <p class="editable" data-key="mortgage-protection-p-37">Tom's restaurant failed during the pandemic. He'd personally guaranteed business loans and needed to file bankruptcy. His $320,000 mortgage and $1,975 payment were at risk as personal income evaporated.</p>
+                    <p class="editable outcome" data-key="mortgage-protection-p-38">OUTCOME: Mortgage protection kept making payments while Tom restructured. His family kept their home despite business failure and protected home equity.</p>
+                </div>
+
+                <div class="scenario-item">
+                    <h3 class="editable" data-key="mortgage-protection-h3-20">Both Spouses Covered</h3>
+                    <p class="editable" data-key="mortgage-protection-p-39">Linda and James both had mortgage protection. When James died at 55, his policy paid off the remaining $195,000 mortgage. Linda received the house debt-free and kept her policy in force for her own protection.</p>
+                    <p class="editable outcome" data-key="mortgage-protection-p-40">OUTCOME: Dual coverage provided complete protection. Linda lives mortgage-free with financial security and her kids inherited a valuable asset.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="section-header">
+            <h2 class="editable" data-key="mortgage-protection-h2-7">Mortgage Protection Insurance FAQs</h2>
+            <p class="editable" data-key="mortgage-protection-p-41">Common questions about protecting your home</p>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="editable" data-key="mortgage-protection-h3-21">What's the difference between mortgage protection and PMI?</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-content">
+                    <p class="editable" data-key="mortgage-protection-p-42">PMI (Private Mortgage Insurance) protects the LENDER if you default on your loan your family receives nothing. Mortgage protection insurance protects YOUR FAMILY if you die they receive money to pay off the mortgage and keep the home. PMI is required by lenders when you put less than 20% down; mortgage protection is optional coverage you choose to protect your family.</p>
+                    <p class="editable" data-key="mortgage-protection-p-43">PMI costs $30-70 per $100,000 borrowed monthly and disappears once you reach 20% equity with no benefit to you. Mortgage protection pays death benefit to YOUR family, ensuring they keep the home debt-free. Completely different products serving opposite purposes.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="editable" data-key="mortgage-protection-h3-22">Should I get mortgage protection or term life insurance?</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-content">
+                    <p class="editable" data-key="mortgage-protection-p-44">Many families choose both: term life for general income replacement and other expenses, plus mortgage protection specifically dedicated to keeping the home. Mortgage protection ensures death benefit goes to the mortgage, while term life provides flexibility for all family needs.</p>
+                    <p class="editable" data-key="mortgage-protection-p-45">If choosing one: Get term life if you want flexibility to use death benefit for any purpose. Choose mortgage protection if ensuring your family keeps the home is your absolute top priority and you want lower premiums through decreasing coverage. Many agents recommend level term life as it's more flexible.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="editable" data-key="mortgage-protection-h3-23">How much does mortgage protection insurance cost?</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-content">
+                    <p class="editable" data-key="mortgage-protection-p-46">Costs vary by age, health, mortgage amount, and riders. For a healthy 35-year-old with a $300,000 mortgage: expect $40-80/month for basic death benefit coverage. Adding disability, unemployment, and critical illness riders adds $30-60/month total, bringing full coverage to $70-140/month.</p>
+                    <p class="editable" data-key="mortgage-protection-p-47">Premiums are typically 20-40% lower than level term life because coverage decreases as your mortgage balance declines. Shop multiple carriers as rates vary significantly. Smokers pay 2-3x more than non-smokers.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="editable" data-key="mortgage-protection-h3-24">What happens if I refinance or move?</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-content">
+                    <p class="editable" data-key="mortgage-protection-p-48">Most mortgage protection policies are portable they stay with you regardless of refinancing or moving to a new home. Simply notify the insurer of the new mortgage amount and address. Some policies allow you to increase coverage if your new mortgage is larger.</p>
+                    <p class="editable" data-key="mortgage-protection-p-49">If you refinance to a higher balance, you may need to increase coverage (requires underwriting). If you pay off the mortgage entirely, you can keep the policy in force as regular term life insurance or surrender it.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="editable" data-key="mortgage-protection-h3-25">Do both spouses need mortgage protection?</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-content">
+                    <p class="editable" data-key="mortgage-protection-p-50">Yes, if both incomes are needed to make mortgage payments. If one spouse dies, the survivor likely can't afford the mortgage alone on one income. Cover both spouses for complete protection joint policies or separate policies both work.</p>
+                    <p class="editable" data-key="mortgage-protection-p-51">Even if one spouse earns significantly less, their loss creates childcare costs, household management needs, or loss of benefits that strain finances. Many families cover the higher earner for the full mortgage amount and the lower earner for 50% of the mortgage as a minimum.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="editable" data-key="mortgage-protection-h3-26">What if my mortgage balance is higher than the death benefit?</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-content">
+                    <p class="editable" data-key="mortgage-protection-p-52">With decreasing term mortgage protection, coverage amount decreases yearly to match your declining mortgage balance. If you make extra principal payments or pay down faster than projected, death benefit may be less than actual balance owed.</p>
+                    <p class="editable" data-key="mortgage-protection-p-53">Solution: Choose level term life insurance instead of decreasing term if you plan to pay mortgage early. Or buy slightly more coverage than needed initially (110-120% of mortgage) to create a buffer. Review policy annually to ensure adequate coverage.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="editable" data-key="mortgage-protection-h3-27">Are disability and unemployment riders worth it?</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-content">
+                    <p class="editable" data-key="mortgage-protection-p-54">Highly valuable for most homeowners. You're statistically more likely to become disabled or unemployed than to die during working years. Disability rider costs $20-40/month and can save your home if injury or illness prevents work for months or years.</p>
+                    <p class="editable" data-key="mortgage-protection-p-55">Unemployment rider ($10-25/month) provides 6-12 months of payments during job loss much longer than most emergency funds last. Together, these riders provide protection beyond just death, making the policy far more useful and likely to pay benefits.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3 class="editable" data-key="mortgage-protection-h3-28">Can I get mortgage protection with pre-existing conditions?</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="faq-content">
+                    <p class="editable" data-key="mortgage-protection-p-56">Yes, but premiums will be higher based on the condition. Well-controlled conditions like high blood pressure or diabetes typically qualify for standard or substandard rates. More serious conditions may result in higher premiums or coverage limitations.</p>
+                    <p class="editable" data-key="mortgage-protection-p-57">Some insurers specialize in high-risk applicants. Simplified issue policies with limited health questions are available but have lower coverage limits and higher premiums. Guaranteed issue policies (no health questions) exist but are expensive and have waiting periods before full benefits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    
+
+
+
+
+
+<footer class="py-12 bg-neutral-950 border-t border-neutral-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-center md:text-left">
+        <div class="text-2xl font-bold text-white mb-2">The Life Insurance Boss</div>
+        <div class="flex items-center justify-center md:justify-start gap-4">
+          <p class="text-neutral-500">Protecting families in NY, NJ & PA</p>
+          <div class="flex items-center gap-3">
+            <a href="#" class="text-white hover:text-yellow-400 transition-colors" data-admin-key="social-fb" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" /></svg>
+            </a>
+            <a href="#" class="text-white hover:text-yellow-400 transition-colors" data-admin-key="social-ig" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.462 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 text-neutral-400">
+        <a href="index.html" class="hover:text-yellow-400 transition-colors">Home</a>
+        <a href="index.html#faq" class="hover:text-yellow-400 transition-colors">FAQ</a>
+        <a href="index.html#contact" class="hover:text-yellow-400 transition-colors">Contact</a>
+      </div>
+    </div>
+    
+    <div class="mt-8 pt-8 border-t border-neutral-800 text-center text-neutral-500 text-sm">
+      <p>&copy; 2026 The Life Insurance Boss. All rights reserved. Licensed in New York, New Jersey & Pennsylvania.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  const pageObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        entry.target.classList.add('animate');
+        if (entry.target.classList.contains('stat-box')) {
+          const numberEl = entry.target.querySelector('.number');
+          if (numberEl && !numberEl.classList.contains('counted')) {
+            numberEl.classList.add('counted');
+            const target = parseFloat(numberEl.getAttribute('data-target') || '0');
+            const prefix = numberEl.getAttribute('data-prefix') || '';
+            const suffix = numberEl.getAttribute('data-suffix') || '';
+            let current = 0;
+            const increment = target / (2000 / 16);
+            const updateCounter = () => {
+              current += increment;
+              if (current < target) { numberEl.textContent = prefix + Math.floor(current) + suffix; requestAnimationFrame(updateCounter); }
+              else { numberEl.textContent = prefix + target + suffix; }
+            };
+            updateCounter();
+          }
+        }
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.fade-in-up,.value-card,.stat-box,.testimonial,.problem-box,.solution-box,.coverage-card,.benefit-item,.scenario-item,.faq-item').forEach(el => pageObserver.observe(el));
+  document.querySelectorAll('.faq-header').forEach(h => {
+    h.addEventListener('click', () => {
+      const item = h.parentElement;
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    });
+  });
+</script>
+
+<script src="js/quote.js"></script>
+<script src="js/chatbot.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disability Insurance | The Life Insurance Boss</title>
+  <meta name="description" content="Disability insurance protects your income if you can't work due to illness or injury. Get income protection from The Life Insurance Boss.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#FAC000', secondary: '#F59E0B' }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    
+    * { font-family: 'Inter', sans-serif; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    html, body { margin: 0; padding: 0; width: 100%; min-height: 100vh; background-color: #000; overflow-x: hidden; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0a0a0a; }
+    ::-webkit-scrollbar-thumb { background: #FAC000; border-radius: 4px; }
+    * { scrollbar-width: thin; scrollbar-color: #FAC000 #0a0a0a; }
+    .fade-in-up { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
+    .fade-in-up.visible { opacity: 1; transform: translateY(0); }
+    .dropdown-menu { opacity: 0; visibility: hidden; transition: opacity 0.2s ease, visibility 0.2s ease; }
+    .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; }
+    [contenteditable]:focus { outline: 2px dashed #FAC000; outline-offset: 2px; background: rgba(250,192,0,0.05); border-radius: 4px; }
+    /* Hero background */
+    .hero-bg { background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80'); background-size: cover; background-position: center; position: relative; }
+    .hero-bg::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, rgba(10,10,10,1), rgba(10,10,10,0.7), rgba(10,10,10,0.3)); }
+    .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,1), transparent, rgba(10,10,10,0.5)); }
+    
+    /* Custom styles from Google Drive contents */
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: transparent;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Content Sections */
+        .content-section {
+            background: transparent;
+            padding: 60px 0;
+        }
+
+        .section-title {
+            color: #ffd700;
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #ffffff;
+            margin-bottom: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* How It Works Section */
+        .how-works-section {
+            background: transparent;
+            padding: 60px 20px;
+        }
+
+        .how-works-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(60, 60, 60, 0.85);
+            border-left: 5px solid #ffd700;
+            padding: 50px;
+            border-radius: 12px;
+        }
+
+        .how-works-content h2 {
+            color: #ffd700;
+            font-size: 2.8em;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .how-works-content .subtitle {
+            color: #ffffff;
+            font-size: 1.3em;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .how-works-content p {
+            color: #ffffff;
+            font-size: 1.15em;
+            line-height: 1.9;
+            margin-bottom: 25px;
+        }
+
+        /* Risk Section */
+        .risk-section {
+            background: rgba(60, 60, 60, 0.85);
+            padding: 60px 20px;
+            margin-bottom: 60px;
+        }
+
+        .risk-title {
+            color: #ffd700;
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+
+        .risk-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto 40px;
+        }
+
+        .risk-stat-box {
+            background: rgba(50, 50, 50, 0.9);
+            border: 3px solid #ffd700;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .risk-stat-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+        }
+
+        .risk-stat-box .big-number {
+            color: #ffd700;
+            font-size: 4em;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .risk-stat-box .stat-description {
+            color: #ffffff;
+            font-size: 1.3em;
+            line-height: 1.5;
+        }
+
+        .risk-quote {
+            background: rgba(40, 40, 40, 0.95);
+            border-left: 5px solid #ffd700;
+            padding: 30px 40px;
+            max-width: 1000px;
+            margin: 40px auto 0;
+        }
+
+        .risk-quote p {
+            color: #ffffff;
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .risk-quote p:last-child {
+            margin-bottom: 0;
+        }
+
+        .risk-quote .highlight {
+            color: #ffd700;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        /* Why Critical Section */
+        .why-critical-section {
+            background: transparent;
+            padding: 60px 20px;
+        }
+
+        .critical-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .critical-card {
+            background: rgba(60, 60, 60, 0.85);
+            padding: 35px;
+            border-radius: 12px;
+            border-left: 5px solid #ffd700;
+            transition: all 0.3s ease;
+        }
+
+        .critical-card:hover {
+            transform: translateX(10px);
+            background: rgba(70, 70, 70, 0.9);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+        }
+
+        .critical-card .check-icon {
+            color: #ffd700;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .critical-card h3 {
+            color: #ffd700;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .critical-card p {
+            color: #ffffff;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        /* Info Boxes */
+        .info-boxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .info-box {
+            background: linear-gradient(145deg, rgba(70, 70, 70, 0.6), rgba(50, 50, 50, 0.6));
+            padding: 35px;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .info-box:hover::before {
+            left: 100%;
+        }
+
+        .info-box:hover {
+            transform: translateY(-8px);
+            border-color: rgba(255, 215, 0, 0.6);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+        }
+
+        .info-box h3 {
+            color: #ffd700;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-box-icon {
+            font-size: 1.8em;
+        }
+
+        .info-box p {
+            color: #ffffff;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        .info-box ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .info-box li {
+            margin: 10px 0;
+            color: #ffffff;
+        }
+
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .feature-item {
+            background: rgba(60, 60, 60, 0.5);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 5px solid #ffd700;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            background: rgba(70, 70, 70, 0.6);
+            transform: translateX(10px);
+        }
+
+        .feature-item h4 {
+            color: #ffd700;
+            margin-bottom: 12px;
+            font-size: 1.4em;
+        }
+
+        .feature-item p {
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        /* Stats Banner */
+        .stats-banner {
+            background: linear-gradient(90deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin: 60px 0;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat-number {
+            color: #ffd700;
+            font-size: 3em;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .stat-label {
+            color: #ffffff;
+            font-size: 1.1em;
+            line-height: 1.4;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 0, 0, 0.1), rgba(255, 100, 0, 0.1));
+            border: 2px solid #ffd700;
+            border-radius: 15px;
+            padding: 35px;
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .warning-box::before {
+            content: '⚠️';
+            font-size: 3em;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            opacity: 0.3;
+        }
+
+        .warning-box h3 {
+            color: #ffd700;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .warning-box p {
+            color: #ffffff;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        /* Comparison Table */
+        .comparison-wrapper {
+            overflow-x: auto;
+            margin: 40px 0;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(60, 60, 60, 0.5);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .comparison-table thead {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1));
+        }
+
+        .comparison-table th {
+            color: #ffd700;
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.2em;
+            border-bottom: 2px solid #ffd700;
+        }
+
+        .comparison-table td {
+            padding: 18px 20px;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+            color: #ffffff;
+        }
+
+        .comparison-table tr:hover {
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        /* Process Steps */
+        .process-steps {
+            margin: 50px 0;
+            position: relative;
+        }
+
+        .process-step {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 25px;
+            margin-bottom: 40px;
+            align-items: start;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ffd700, #fadc2f);
+            color: #000000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .step-content {
+            background: rgba(70, 70, 70, 0.5);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .step-content h3 {
+            color: #ffd700;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .step-content p {
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        /* FAQ Accordion - UPDATED STYLE */
+        .faq-section {
+            margin: 60px 0;
+        }
+
+        .faq-item {
+            background: #363636; /* Dark Grey Background */
+            margin-bottom: 15px;
+            border-radius: 12px;
+            border: none; /* No border */
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .faq-item:hover {
+            background: #404040;
+        }
+
+        .faq-question {
+            padding: 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .faq-question h3 {
+            color: #ffd700;
+            margin: 0;
+            font-size: 1.3em;
+            flex: 1;
+        }
+
+        .faq-toggle {
+            color: #ffd700; /* Yellow Text */
+            font-size: 2em; /* Larger size */
+            font-weight: 400; /* Thinner */
+            background: transparent; /* No circle background */
+            width: auto;
+            height: auto;
+            border-radius: 0;
+            display: block;
+            margin-left: 20px;
+            line-height: 0.5;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-toggle:hover {
+            background: transparent;
+            transform: scale(1.1);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 25px;
+            background: inherit;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+            padding: 0 25px 25px 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg); /* Rotates to X */
+        }
+
+        .faq-answer p {
+            color: #ffffff;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .feature-grid, .critical-grid, .risk-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .process-step {
+                grid-template-columns: 60px 1fr;
+                gap: 15px;
+            }
+
+            .step-number {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5em;
+            }
+
+            .section-title, .risk-title {
+                font-size: 2em;
+            }
+        }
+
+        /* Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .animate-fade {
+            opacity: 0;
+            transition: opacity 1s ease-out;
+        }
+
+        .animate-fade.animated {
+            opacity: 1;
+        }
+
+        .animate-scale {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .animate-scale.animated {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li::before {
+            content: '▸';
+            color: #ffd700;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.2em;
+            margin-left: -1.2em;
+        }
+
+        ul {
+            padding-left: 1.5em;
+        }
+    
+    
+  </style>
+</head>
+<body class="bg-gradient-to-br from-neutral-950 via-neutral-900 to-black min-h-screen">
+
+<div class="fixed inset-0 pointer-events-none overflow-hidden">
+  <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-yellow-500/10 to-transparent rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3"></div>
+  <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-amber-500/5 to-transparent rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3"></div>
+  <svg class="absolute inset-0 w-full h-full opacity-[0.02]" xmlns="http://www.w3.org/2000/svg">
+    <defs><pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="#FAC000" stroke-width="1"/></pattern></defs>
+    <rect width="100%" height="100%" fill="url(#grid)" />
+  </svg>
+</div>
+
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- LOGO -->
+        <a href="index.html" class="flex items-center flex-shrink-0 cursor-pointer">
+          <img src="logo.png" alt="The Life Insurance Boss Logo" class="h-10 sm:h-12 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='block';">
+          <span id="logo-fallback" class="text-yellow-400 font-bold text-lg tracking-tight hidden ml-2">The Life Insurance Boss</span>
+        </a>
+
+        <!-- DESKTOP MENU -->
+        <nav class="hidden xl:flex items-center space-x-6 mx-auto">
+          <a href="index.html#why-us" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">Why Us</a>
+          <a href="index.html#calculator" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">Calculator</a>
+          <a href="index.html#testimonials" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">Reviews</a>
+          <a href="index.html#faq" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">FAQ</a>
+          <a href="index.html#contact" class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors text-sm">Contact</a>
+          <div class="dropdown relative group">
+            <button class="text-neutral-300 hover:text-yellow-400 font-medium transition-colors flex items-center space-x-1 cursor-pointer text-sm">
+              <span>Insurance Types</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="dropdown-menu absolute top-full left-0 mt-2 w-56 bg-neutral-900 border border-neutral-700 rounded-xl shadow-2xl shadow-black/50 overflow-hidden z-50">
+              <a href="whole-life.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Whole Life</a>
+              <a href="universal-life.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Universal Life</a>
+              <a href="term-life.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Term Life</a>
+              <a href="mortgage-protection.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Mortgage Protection</a>
+              <a href="disability-insurance.html" class="block px-5 py-3 transition-all text-sm text-neutral-300 hover:text-yellow-400 hover:bg-neutral-800 font-medium">Disability Insurance</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- CTA BUTTONS -->
+        <div class="flex items-center space-x-3 sm:space-x-4">
+          <a href="tel:732-268-3373" class="hidden lg:flex items-center space-x-2 text-neutral-300 hover:text-yellow-400 font-medium transition-colors whitespace-nowrap text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+            <span>732-268-3373</span>
+          </a>
+          <!-- GET YOUR QUOTE BUTTON -->
+          <a href="https://lifeinsuranceboss.com/get-a-life-insurance-quote/" class="bg-gradient-to-r from-yellow-400 to-amber-500 text-black px-4 sm:px-6 py-2 rounded-full font-semibold hover:from-yellow-300 hover:to-amber-400 transition-all shadow-lg shadow-yellow-500/25 hover:shadow-xl hover:shadow-yellow-500/30 hover:-translate-y-0.5 whitespace-nowrap text-sm">
+            Get Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<section class="hero-bg relative pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="fade-in-up text-center lg:text-left max-w-3xl">
+      <div class="inline-flex items-center space-x-2 bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+        <span class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
+        <span class="editable" data-key="disability-badge">Disability Insurance</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+        <span class="editable" data-key="disability-headline">Protect Your Most Valuable Asset</span>
+        <span class="block bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent editable" data-key="disability-headline-2">Your Ability to Earn</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-neutral-400 mb-8 leading-relaxed max-w-2xl editable" data-key="disability-description">Disability insurance replaces a portion of your income if you become unable to work due to illness or injury. Your ability to earn an income is your most valuable asset—protect it with comprehensive disability coverage from The Life Insurance Boss.</p>
+      <a href="https://lifeinsuranceboss.com/get-a-life-insurance-quote/" class="inline-block bg-gradient-to-r from-yellow-400 to-amber-500 text-black px-8 py-4 rounded-full font-semibold text-lg hover:from-yellow-300 hover:to-amber-400 transition-all shadow-xl shadow-yellow-500/25">Get Your Free Quote</a>
+    </div>
+  </div>
+</section>
+
+
+
+    <section class="how-works-section">
+        <div class="how-works-content">
+            <h2 class="editable" data-key="disability-insurance-h2-0">How Disability Insurance Works</h2>
+            <p class="editable subtitle" data-key="disability-insurance-p-0">Get monthly income protection when a covered injury or illness keeps you from working.</p>
+            
+            <p class="editable" data-key="disability-insurance-p-1">Disability insurance replaces 50-70% of your income if you become unable to work due to injury or illness. When a covered disability prevents you from performing your job duties, the policy pays monthly benefits directly to you not your employer or doctor. These tax-free payments (for individually-owned policies) replace lost income so you can pay bills, mortgage, and living expenses while focusing on recovery without financial devastation.</p>
+            
+            <p class="editable" data-key="disability-insurance-p-2">Policies define disability in two ways: "own occupation" coverage pays benefits if you can't perform your specific job (a surgeon who loses hand function), while "any occupation" coverage only pays if you can't work at any job for which you're reasonably suited. Own-occupation provides superior protection but costs more. Most policies have elimination periods (waiting periods) of 30-180 days before benefits begin, similar to a deductible. Benefit periods range from 2 years to age 65 or lifetime, determining how long payments continue if you remain disabled.</p>
+            
+            <p class="editable" data-key="disability-insurance-p-3">Short-term disability (STD) covers temporary disabilities lasting 3-6 months with benefit periods up to 2 years, while long-term disability (LTD) protects against extended or permanent disabilities with benefits lasting years or until retirement age. Many employers offer group LTD coverage at 60% of income, but this is often insufficient and disappears if you change jobs. Individual disability insurance provides portable coverage you own regardless of employment, with better definitions of disability, higher benefit amounts, and guaranteed renewal.</p>
+        </div>
+    </section>
+
+    <section class="risk-section">
+        <h2 class="editable risk-title" data-key="disability-insurance-h2-1">The Risk Is Real and Closer Than You Think</h2>
+        
+        <div class="risk-stats">
+            <div class="risk-stat-box">
+                <span class="big-number">1 in 4</span>
+                <p class="editable stat-description" data-key="disability-insurance-p-4">20-year-olds will become disabled before reaching retirement age</p>
+            </div>
+            
+            <div class="risk-stat-box">
+                <span class="big-number">34.6 months</span>
+                <p class="editable stat-description" data-key="disability-insurance-p-5">Average duration of individual disability claims</p>
+            </div>
+        </div>
+        
+        <div class="risk-quote">
+            <p class="editable" data-key="disability-insurance-p-6">Without income replacement, most people exhaust their savings within months, face foreclosure, accumulate crushing debt, and destroy decades of financial progress.</p>
+            
+            <p class="editable highlight" data-key="disability-insurance-p-7">Disability insurance is the safety net between temporary setback and financial catastrophe.</p>
+        </div>
+    </section>
+
+    <section class="why-critical-section">
+        <div class="container">
+            <h2 class="editable section-title" data-key="disability-insurance-h2-2">Why Disability Insurance is Critical</h2>
+            
+            <div class="critical-grid">
+                <div class="critical-card">
+                    <div class="check-icon">✓</div>
+                    <h3 class="editable" data-key="disability-insurance-h3-0">Your Income is Your Asset</h3>
+                    <p class="editable" data-key="disability-insurance-p-8">A 35-year-old earning $75,000 per year will earn over $2.25 million by age 65. Disability insurance protects that earning power just like insuring your home, car, or business.</p>
+                </div>
+
+                <div class="critical-card">
+                    <div class="check-icon">✓</div>
+                    <h3 class="editable" data-key="disability-insurance-h3-1">Social Security Isn't Enough</h3>
+                    <p class="editable" data-key="disability-insurance-p-9">SSDI approval rates are low and the average benefit is about $1,400 per month far below most household expenses. Many applicants wait months or even years for approval.</p>
+                </div>
+
+                <div class="critical-card">
+                    <div class="check-icon">✓</div>
+                    <h3 class="editable" data-key="disability-insurance-h3-2">Prevents Financial Devastation</h3>
+                    <p class="editable" data-key="disability-insurance-p-10">Nearly half of mortgage foreclosures are linked to disability. Without income replacement, families can quickly face missed payments, rising debt, and drained savings.</p>
+                </div>
+
+                <div class="critical-card">
+                    <div class="check-icon">✓</div>
+                    <h3 class="editable" data-key="disability-insurance-h3-3">Tax-Free Benefits</h3>
+                    <p class="editable" data-key="disability-insurance-p-11">Benefits from individually owned disability policies are generally income-tax-free, allowing you to receive your full monthly benefit during a disability claim.</p>
+                </div>
+
+                <div class="critical-card">
+                    <div class="check-icon">✓</div>
+                    <h3 class="editable" data-key="disability-insurance-h3-4">Portable Coverage</h3>
+                    <p class="editable" data-key="disability-insurance-p-12">Individual disability policies stay with you regardless of job changes. Employer sponsored coverage typically ends when you leave your job often when you need stability most.</p>
+                </div>
+
+                <div class="critical-card">
+                    <div class="check-icon">✓</div>
+                    <h3 class="editable" data-key="disability-insurance-h3-5">Protects Family Lifestyle</h3>
+                    <p class="editable" data-key="disability-insurance-p-13">A disability doesn’t only impact the individual it affects the whole household. Coverage helps ensure mortgage payments, childcare, and living expenses remain on track.</p>
+                </div>
+
+                <div class="critical-card">
+                    <div class="check-icon">✓</div>
+                    <h3 class="editable" data-key="disability-insurance-h3-6">Business Owner Protection</h3>
+                    <p class="editable" data-key="disability-insurance-p-14">Entrepreneurs and self-employed professionals don’t have sick leave, employer benefits, or workers’ compensation to rely on. Individual disability coverage fills that gap and protects business and personal finances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="editable section-title" data-key="disability-insurance-h2-3">Types of Disability Insurance Coverage</h2>
+            <p class="editable section-subtitle" data-key="disability-insurance-p-15">Understanding your options helps you choose the right protection for your situation and income level.</p>
+
+            <div class="info-boxes">
+                <div class="info-box">
+                    <h3 class="editable" data-key="disability-insurance-h3-7"><span class="info-box-icon"></span> Short-Term Disability</h3>
+                    <p class="editable" data-key="disability-insurance-p-16">Coverage for temporary disabilities lasting weeks to months:</p>
+                    <ul>
+                        <li class="editable" data-key="disability-insurance-li-0">Benefits start after 0-14 day waiting period</li>
+                        <li class="editable" data-key="disability-insurance-li-1">Coverage lasts 3-6 months (up to 2 years)</li>
+                        <li class="editable" data-key="disability-insurance-li-2">Replaces 40-70% of your income</li>
+                        <li class="editable" data-key="disability-insurance-li-3">Covers surgery recovery and broken bones</li>
+                        <li class="editable" data-key="disability-insurance-li-4">Protects during pregnancy complications</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="editable" data-key="disability-insurance-h3-8"><span class="info-box-icon"></span> Long-Term Disability</h3>
+                    <p class="editable" data-key="disability-insurance-p-17">Essential protection for extended disabilities:</p>
+                    <ul>
+                        <li class="editable" data-key="disability-insurance-li-5">Benefits continue for years or until retirement</li>
+                        <li class="editable" data-key="disability-insurance-li-6">Waiting period of 90-180 days</li>
+                        <li class="editable" data-key="disability-insurance-li-7">Replaces 50-70% of income</li>
+                        <li class="editable" data-key="disability-insurance-li-8">Covers chronic illnesses and conditions</li>
+                        <li class="editable" data-key="disability-insurance-li-9">Protection until age 65 or 67</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="editable" data-key="disability-insurance-h3-9"><span class="info-box-icon"></span> Own-Occupation Coverage</h3>
+                    <p class="editable" data-key="disability-insurance-p-18">Superior protection for your specific profession:</p>
+                    <ul>
+                        <li class="editable" data-key="disability-insurance-li-10">Pays if you can't perform YOUR job</li>
+                        <li class="editable" data-key="disability-insurance-li-11">Essential for surgeons and dentists</li>
+                        <li class="editable" data-key="disability-insurance-li-12">Protects specialized skills and training</li>
+                        <li class="editable" data-key="disability-insurance-li-13">Higher premiums but better benefits</li>
+                        <li class="editable" data-key="disability-insurance-li-14">Allows alternative work while collecting</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="editable" data-key="disability-insurance-h3-10"><span class="info-box-icon"></span> Group vs Individual Policies</h3>
+                    <p class="editable" data-key="disability-insurance-p-19">Understanding your coverage options:</p>
+                    <ul>
+                        <li class="editable" data-key="disability-insurance-li-15">Group: Employer-sponsored, less expensive</li>
+                        <li class="editable" data-key="disability-insurance-li-16">Individual: Portable, complete coverage</li>
+                        <li class="editable" data-key="disability-insurance-li-17">Group typically covers 50-60% of income</li>
+                        <li class="editable" data-key="disability-insurance-li-18">Individual can cover up to 70% plus bonuses</li>
+                        <li class="editable" data-key="disability-insurance-li-19">Individual policies stay with you always</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="editable" data-key="disability-insurance-h3-11"><span class="info-box-icon"></span> Tax-Free Benefits</h3>
+                    <p class="editable" data-key="disability-insurance-p-20">Keep more of your disability income:</p>
+                    <ul>
+                        <li class="editable" data-key="disability-insurance-li-20">Benefits are tax-free if you pay premiums</li>
+                        <li class="editable" data-key="disability-insurance-li-21">Receive full benefit amount monthly</li>
+                        <li class="editable" data-key="disability-insurance-li-22">No tax withholding on payments</li>
+                        <li class="editable" data-key="disability-insurance-li-23">More money when you need it most</li>
+                        <li class="editable" data-key="disability-insurance-li-24">Employer-paid benefits are taxable</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="editable" data-key="disability-insurance-h3-12"><span class="info-box-icon"></span> Complete Coverage</h3>
+                    <p class="editable" data-key="disability-insurance-p-21">Protection for all types of disabilities:</p>
+                    <ul>
+                        <li class="editable" data-key="disability-insurance-li-25">Accidents and traumatic injuries</li>
+                        <li class="editable" data-key="disability-insurance-li-26">Cancer and chronic illnesses</li>
+                        <li class="editable" data-key="disability-insurance-li-27">Heart disease and stroke recovery</li>
+                        <li class="editable" data-key="disability-insurance-li-28">Mental health conditions included</li>
+                        <li class="editable" data-key="disability-insurance-li-29">Pregnancy and childbirth complications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="editable section-title" data-key="disability-insurance-h2-4">What Disabilities Are Covered?</h2>
+            <p class="editable section-subtitle" data-key="disability-insurance-p-22">Most conditions that prevent you from working qualify for disability benefits under properly structured policies.</p>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h4 class="editable" data-key="disability-insurance-h4-0">✅ Musculoskeletal Conditions</h4>
+                    <p class="editable" data-key="disability-insurance-p-23">Back injuries, neck problems, herniated discs, arthritis, and joint disorders are the leading cause of disability claims.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h4 class="editable" data-key="disability-insurance-h4-1">✅ Cancer Diagnosis & Treatment</h4>
+                    <p class="editable" data-key="disability-insurance-p-24">Cancer treatment including chemotherapy, radiation, and surgery often prevents work for extended periods.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h4 class="editable" data-key="disability-insurance-h4-2">✅ Cardiovascular Disease</h4>
+                    <p class="editable" data-key="disability-insurance-p-25">Heart attacks, strokes, bypass surgery, and chronic heart conditions frequently lead to long-term disability.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h4 class="editable" data-key="disability-insurance-h4-3">✅ Mental Health Conditions</h4>
+                    <p class="editable" data-key="disability-insurance-p-26">Depression, anxiety, PTSD, and bipolar disorder are covered under most policies. Mental health disabilities are increasingly recognized as legitimate conditions.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h4 class="editable" data-key="disability-insurance-h4-4">✅ Pregnancy Complications</h4>
+                    <p class="editable" data-key="disability-insurance-p-27">Bed rest orders, preeclampsia, gestational diabetes, and post-delivery complications qualify for short-term disability.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h4 class="editable" data-key="disability-insurance-h4-5">✅ Accidents & Injuries</h4>
+                    <p class="editable" data-key="disability-insurance-p-28">Car accidents, workplace injuries, sports injuries, and falls that result in broken bones, head trauma, or mobility limitations are covered.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h4 class="editable" data-key="disability-insurance-h4-6">✅ Chronic Illnesses</h4>
+                    <p class="editable" data-key="disability-insurance-p-29">Diabetes complications, autoimmune diseases, chronic fatigue syndrome, fibromyalgia, and other long-term conditions that impair work ability.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h4 class="editable" data-key="disability-insurance-h4-7">✅ Neurological Disorders</h4>
+                    <p class="editable" data-key="disability-insurance-p-30">Multiple sclerosis, Parkinson's disease, epilepsy, ALS, and other neurological conditions often qualify for long-term disability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="editable section-title" data-key="disability-insurance-h2-5">Disability Insurance Cost by Income</h2>
+            <p class="editable section-subtitle" data-key="disability-insurance-p-31">Premiums are surprisingly affordable typically 1-3% of your annual income for complete protection.</p>
+
+            <div class="stats-banner">
+                <div class="comparison-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Annual Income</th>
+                                <th>Monthly Benefit (60%)</th>
+                                <th>Estimated Monthly Premium</th>
+                                <th>% of Income</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-weight: 600;">$40,000</td>
+                                <td>$2,000/month</td>
+                                <td>$40 - $80</td>
+                                <td>1.2% - 2.4%</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600;">$60,000</td>
+                                <td>$3,000/month</td>
+                                <td>$60 - $120</td>
+                                <td>1.2% - 2.4%</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600;">$80,000</td>
+                                <td>$4,000/month</td>
+                                <td>$80 - $160</td>
+                                <td>1.2% - 2.4%</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600;">$100,000</td>
+                                <td>$5,000/month</td>
+                                <td>$100 - $200</td>
+                                <td>1.2% - 2.4%</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600;">$150,000</td>
+                                <td>$7,500/month</td>
+                                <td>$150 - $300</td>
+                                <td>1.2% - 2.4%</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600;">$200,000</td>
+                                <td>$10,000/month</td>
+                                <td>$200 - $400</td>
+                                <td>1.2% - 2.4%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="editable" style="color: #ffd700; font-size: 16px; font-style: italic; margin-top: 25px; text-align: center;" data-key="disability-insurance-p-32">*Rates for healthy individuals age 30-40. Actual rates vary by age, health, occupation, and policy features.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="editable section-title" data-key="disability-insurance-h2-6">Short-Term vs. Long-Term Disability Comparison</h2>
+            <p class="editable section-subtitle" data-key="disability-insurance-p-33">Both types of coverage serve different purposes. Understanding the differences helps you choose appropriate protection.</p>
+
+            <div class="comparison-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Short-Term Disability</th>
+                            <th>Long-Term Disability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Benefit Period</strong></td>
+                            <td>3-6 months (up to 2 years)</td>
+                            <td>Years or until age 65-67</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Waiting Period</strong></td>
+                            <td>0-14 days</td>
+                            <td>90-180 days</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Income Replacement</strong></td>
+                            <td>40-70% of salary</td>
+                            <td>50-70% of salary</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Monthly Premium</strong></td>
+                            <td>1-2% of annual salary</td>
+                            <td>1-3% of annual salary</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Best For</strong></td>
+                            <td>Temporary conditions, recovery</td>
+                            <td>Serious, long-term disabilities</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="warning-box">
+                <h3 class="editable" data-key="disability-insurance-h3-13">Should You Have Both?</h3>
+                <p class="editable" data-key="disability-insurance-p-34"><strong>Yes!</strong> Short-term and long-term disability insurance work together to provide seamless income protection. STD covers the initial recovery period with quick benefit start, while LTD provides long-term security for serious conditions. Most complete protection strategies include both types of coverage either through employer benefits, individual policies, or a combination of both.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="editable section-title" data-key="disability-insurance-h2-7">How to Get Disability Insurance</h2>
+            <p class="editable section-subtitle" data-key="disability-insurance-p-35">Getting covered is straightforward. Follow these steps to protect your income and financial future.</p>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="editable" data-key="disability-insurance-h3-14">Calculate Your Income Needs</h3>
+                        <p class="editable" data-key="disability-insurance-p-36">Review your monthly expenses including mortgage/rent, utilities, insurance, food, transportation, and debt payments. Most policies replace 60-70% of gross income.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="editable" data-key="disability-insurance-h3-15">Check Existing Coverage</h3>
+                        <p class="editable" data-key="disability-insurance-p-37">Review employer-provided disability benefits. Many companies offer group long-term disability covering 50-60% of income. Determine if this is sufficient.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="editable" data-key="disability-insurance-h3-16">Get Multiple Quotes</h3>
+                        <p class="editable" data-key="disability-insurance-p-38">Contact insurance agents who sell disability coverage from multiple carriers. Compare premiums, benefit amounts, elimination periods, and policy definitions.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 class="editable" data-key="disability-insurance-h3-17">Complete Medical Underwriting</h3>
+                        <p class="editable" data-key="disability-insurance-p-39">Individual disability policies require health evaluations. Complete application honestly and thoroughly. Medical records may be reviewed.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3 class="editable" data-key="disability-insurance-h3-18">Review and Finalize Coverage</h3>
+                        <p class="editable" data-key="disability-insurance-p-40">Carefully read your policy documents before signing. Understand exactly what's covered, excluded, and required for claims.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="editable section-title" data-key="disability-insurance-h2-8">Frequently Asked Questions</h2>
+            
+            <div class="faq-section">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="editable" data-key="disability-insurance-h3-19">What is disability insurance and why do I need it?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="editable" data-key="disability-insurance-p-41">Disability insurance replaces 50-70% of your income if you become unable to work due to illness or injury. Unlike health insurance which pays medical bills, disability insurance pays YOU directly to cover living expenses mortgage, bills, food, and everyday costs during recovery.</p>
+                        <p class="editable" data-key="disability-insurance-p-42">You need it because 1 in 4 workers will become disabled before retirement, and most people can't maintain their lifestyle without income for more than a few months. It's your financial safety net when you can't earn a paycheck.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="editable" data-key="disability-insurance-h3-20">How much disability insurance do I need?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="editable" data-key="disability-insurance-p-43">Most experts recommend coverage that replaces 60-70% of your gross income. For example, if you earn $100,000/year, you'd need $5,000-5,800/month in disability benefits.</p>
+                        <p class="editable" data-key="disability-insurance-p-44">Calculate your fixed expenses (mortgage, car payments, insurance), variable costs (groceries, utilities), and financial obligations. Most policies cap benefits at 60-70% to incentivize returning to work while still providing adequate protection.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="editable" data-key="disability-insurance-h3-21">What's the difference between short-term and long-term disability?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="editable" data-key="disability-insurance-p-45">Short-term disability covers temporary conditions lasting weeks to months (3-6 months typically, up to 2 years). Benefits start quickly (0-14 day wait). It's for broken bones, surgery recovery, pregnancy complications, etc.</p>
+                        <p class="editable" data-key="disability-insurance-p-46">Long-term disability kicks in after 90-180 days and covers serious conditions lasting years or until retirement. It protects against career-ending disabilities like cancer, stroke, or chronic illness. You typically need both types for complete income protection.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="editable" data-key="disability-insurance-h3-22">What is the elimination period or waiting period?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="editable" data-key="disability-insurance-p-47">The elimination period is how long you must be disabled before benefits begin like a deductible measured in time instead of money. Common elimination periods are 30, 60, 90, or 180 days.</p>
+                        <p class="editable" data-key="disability-insurance-p-48">Longer elimination periods mean lower premiums. If you have 3-6 months of emergency savings, choose a longer elimination period (90-180 days) to save 20-40% on premiums while still maintaining adequate protection.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="editable" data-key="disability-insurance-h3-23">Does Social Security Disability cover me adequately?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="editable" data-key="disability-insurance-p-49">No. Social Security Disability Insurance (SSDI) is extremely difficult to qualify for about 65% of applications are initially denied. The definition is strict: you must be unable to do ANY job, not just your current job.</p>
+                        <p class="editable" data-key="disability-insurance-p-50">Even if approved, average SSDI benefits are only $1,400/month far below what most people need. The application process takes 3-6 months (or longer), and you won't receive benefits during that time. Private disability insurance provides better, faster, and more complete protection.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="editable" data-key="disability-insurance-h3-24">What's the difference between own-occupation and any-occupation coverage?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="editable" data-key="disability-insurance-p-51">Own-occupation pays benefits if you can't perform the duties of YOUR specific job (even if you could do other work). This is the best coverage but costs more. Essential for surgeons, dentists, attorneys, and specialized professionals.</p>
+                        <p class="editable" data-key="disability-insurance-p-52">Any-occupation only pays if you can't work ANY job suited to your education and experience. It's cheaper but harder to qualify for benefits. Many policies start as own-occupation for 2-5 years, then switch to any-occupation. Always choose own-occupation if budget allows.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="editable" data-key="disability-insurance-h3-25">Are disability insurance benefits taxable?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="editable" data-key="disability-insurance-p-53">If YOU pay the premiums with after-tax dollars (individual policy or supplemental coverage), your disability benefits are tax-free. This means you get the full benefit amount without any tax deductions.</p>
+                        <p class="editable" data-key="disability-insurance-p-54">If your EMPLOYER pays the premiums (group disability), benefits are taxable as income. This is why many people supplement employer coverage with an individual policy paid with their own money to ensure tax-free benefits when they need them most.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="editable" data-key="disability-insurance-h3-26">Can I get disability insurance if I have pre-existing conditions?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="editable" data-key="disability-insurance-p-55">It depends on the condition. Many pre-existing conditions result in exclusions (that specific condition won't be covered) rather than outright denials. For example, if you have back problems, the policy might exclude back-related disabilities but cover everything else.</p>
+                        <p class="editable" data-key="disability-insurance-p-56">Some serious conditions (active cancer, recent heart attack, uncontrolled diabetes) may result in declined applications. However, after treatment and stabilization, you may qualify later. Work with an experienced agent who can find insurers that specialize in your situation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<footer class="py-12 bg-neutral-950 border-t border-neutral-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-center md:text-left">
+        <div class="text-2xl font-bold text-white mb-2">The Life Insurance Boss</div>
+        <div class="flex items-center justify-center md:justify-start gap-4">
+          <p class="text-neutral-500">Protecting families in NY, NJ & PA</p>
+          <div class="flex items-center gap-3">
+            <a href="#" class="text-white hover:text-yellow-400 transition-colors" data-admin-key="social-fb" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" /></svg>
+            </a>
+            <a href="#" class="text-white hover:text-yellow-400 transition-colors" data-admin-key="social-ig" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.462 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 text-neutral-400">
+        <a href="index.html" class="hover:text-yellow-400 transition-colors">Home</a>
+        <a href="index.html#faq" class="hover:text-yellow-400 transition-colors">FAQ</a>
+        <a href="index.html#contact" class="hover:text-yellow-400 transition-colors">Contact</a>
+      </div>
+    </div>
+    
+    <div class="mt-8 pt-8 border-t border-neutral-800 text-center text-neutral-500 text-sm">
+      <p>&copy; 2026 The Life Insurance Boss. All rights reserved. Licensed in New York, New Jersey & Pennsylvania.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  const pageObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        entry.target.classList.add('animate');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.fade-in-up,.critical-card,.info-box,.feature-item,.process-step,.faq-item').forEach(el => pageObserver.observe(el));
+
+  // FAQ Toggle for .faq-question/.faq-toggle style
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    });
+  });
+  // FAQ Toggle for .faq-header style (fallback)
+  document.querySelectorAll('.faq-header').forEach(h => {
+    h.addEventListener('click', () => {
+      const item = h.parentElement;
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    });
+  });
+</script>
+
+<script src="js/quote.js"></script>
+<script src="js/chatbot.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
+
