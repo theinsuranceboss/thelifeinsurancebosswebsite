@@ -1,7 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Check if admin mode is active
   const urlParams = new URLSearchParams(window.location.search);
-  const isAdmin = urlParams.has('admin') || window.location.hash === '#admin';
+  const isAdminRequest = urlParams.has('admin') || window.location.hash === '#admin';
+  let isAdmin = false;
+
+  if (isAdminRequest) {
+    if (sessionStorage.getItem('adminAuth') === 'true') {
+      isAdmin = true;
+    } else {
+      const pwd = prompt('Enter Admin Password:');
+      if (pwd === 'lifeinsurance') {
+        sessionStorage.setItem('adminAuth', 'true');
+        isAdmin = true;
+      } else {
+        alert('Incorrect password. Access denied.');
+        window.location.replace(window.location.pathname);
+        return;
+      }
+    }
+  }
 
   // Migrate old localstorage keys to the unified 'adminEdits' namespace if needed
   const migrateOldEdits = () => {
